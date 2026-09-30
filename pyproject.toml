@@ -1,0 +1,18 @@
+[project]
+name = "qwen3-asr-test"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "pyaudio>=0.2.14",
+    "qwen-asr>=0.0.6",
+    "fastapi>=0.100.0",
+    "uvicorn>=0.23.0",
+    "requests>=2.31.0",
+    "silero-vad>=0.3.0",
+    "modelscope>=1.35.3",
+]
+
+[tool.uv.sources]
+silero-vad = { git = "https://github.com/snakers4/silero-vad" }
